@@ -792,10 +792,10 @@
         },
         {
             "name": "zpr",
-            "version": "1.09",
+            "version": "1.10",
             "section": "chat",
             "maintainer": "瓜瓜吖",
-            "size": "3.255 kb",
+            "size": "3.336 kb",
             "supported": true,
             "des_short": "zpr 随机获取一组涩涩纸片人",
             "des": "zpr 随机获取一组涩涩纸片人"

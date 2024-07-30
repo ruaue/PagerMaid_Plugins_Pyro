@@ -792,13 +792,13 @@
         },
         {
             "name": "zpr",
-            "version": "1.10",
+            "version": "1.11",
             "section": "chat",
             "maintainer": "瓜瓜吖",
-            "size": "3.336 kb",
+            "size": "3.966 kb",
             "supported": true,
             "des_short": "zpr 随机获取一组涩涩纸片人",
-            "des": "zpr 随机获取一组涩涩纸片人"
+            "des": "## zpr 随机获取一组涩涩纸片人\n命令：`,zpr {tag} {r18} {num}`\n- 修改api选项屏蔽AI图片\n- 新增图片信息及原图查看\n- 新增tag搜索，tag不支持空格\n- 新增数量选项，受api限制最高20\n- r18改为仅r18模式，自动添加剧透\n- 如果你的机器无法访问pixiv反代，请自行修改替换可用反代地址"
         },
         {
             "name": "ytdl",

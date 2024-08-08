@@ -10,7 +10,7 @@ from pagermaid.utils import pip_install, lang
 from pagermaid.enums import Message
 from pagermaid.services import bot
 
-pip_install("yt-dlp", version="==2023.3.4", alias="yt_dlp")
+pip_install("yt-dlp", version="==2024.8.6", alias="yt_dlp")
 
 import yt_dlp
 

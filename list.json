@@ -1092,10 +1092,10 @@
         },
         {
             "name": "carbon",
-            "version": "1.0",
+            "version": "1.01",
             "section": "chat",
             "maintainer": "omg-xtao",
-            "size": "1.558 kb",
+            "size": "1.568 kb",
             "supported": true,
             "des_short": "carbon 代码截图",
             "des": ""

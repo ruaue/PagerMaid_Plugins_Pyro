@@ -1109,6 +1109,16 @@
             "supported": true,
             "des_short": "qu 人形 @fish_quote_reply_bot",
             "des": "人形 @fish_quote_reply_bot"
+        },
+        {
+            "name": "autodelcmd",
+            "version": "1.0",
+            "section": "chat",
+            "maintainer": "loneshore",
+            "size": "1.497 kb",
+            "supported": true,
+            "des_short": "autodelcmd 为常用命令增加自动删除 (#185)",
+            "des": "为常用命令增加自动删除"
         }
     ]
 }

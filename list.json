@@ -1119,6 +1119,16 @@
             "supported": true,
             "des_short": "autodelcmd 为常用命令增加自动删除 (#185)",
             "des": "为常用命令增加自动删除"
+        },
+        {
+            "name": "flood_clean",
+            "version": "1.0",
+            "section": "chat",
+            "maintainer": "xtaodada",
+            "size": "6.127 kb",
+            "supported": true,
+            "des_short": "flood_clean 通过表格清理 48 小时内加群的用户",
+            "des": "flood_clean 通过表格清理 48 小时内加群的用户"
         }
     ]
 }

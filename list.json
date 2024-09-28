@@ -1129,6 +1129,16 @@
             "supported": true,
             "des_short": "flood_clean 通过表格清理 48 小时内加群的用户",
             "des": "flood_clean 通过表格清理 48 小时内加群的用户"
+        },
+        {
+            "name": "speedtest_go",
+            "version": "1.0",
+            "section": "chat",
+            "maintainer": "xtaodada",
+            "size": "4.501 kb",
+            "supported": true,
+            "des_short": "speedtest_go 测速",
+            "des": "测速。\n指令：,speedtest_go"
         }
     ]
 }

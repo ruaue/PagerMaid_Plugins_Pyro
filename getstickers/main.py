@@ -10,10 +10,10 @@ from pyrogram.raw.types import InputStickerSetShortName
 from pyrogram.raw.types.messages import StickerSet
 from pyrogram.types import Document, Sticker
 
-from pagermaid import working_dir
 from pagermaid.enums import Message, Client
 from pagermaid.listener import listener
-from pagermaid.single_utils import safe_remove
+from pagermaid.static import working_dir
+from pagermaid.utils import safe_remove
 
 
 async def download_stickers(bot: Client, message: Message, sticker: Sticker):

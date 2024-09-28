@@ -4,9 +4,9 @@ import contextlib
 
 from pyrogram.types import ChatPermissions
 
+from pagermaid.dependence import add_delete_message_job
 from pagermaid.listener import listener
 from pagermaid.enums import Client, Message
-from pagermaid.scheduler import add_delete_message_job
 
 
 @listener(

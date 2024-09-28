@@ -4,11 +4,11 @@ import pytz
 
 from typing import Optional, List
 
-from pagermaid import bot
 from pagermaid.config import Config
+from pagermaid.dependence import scheduler, sqlite
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.scheduler import scheduler
-from pagermaid.single_utils import sqlite, Message
+from pagermaid.services import bot
 from pagermaid.utils import alias_command
 
 

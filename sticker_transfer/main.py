@@ -10,9 +10,10 @@ from pyrogram.raw.functions.messages import GetAllStickers, UninstallStickerSet
 from pyrogram.raw.functions.messages import InstallStickerSet
 from pyrogram.raw.types import InputStickerSetShortName
 
-from pagermaid import bot
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.single_utils import Message, safe_remove
+from pagermaid.services import bot
+from pagermaid.utils import safe_remove
 
 
 class NoStickerSetError(Exception):

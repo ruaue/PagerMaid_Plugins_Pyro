@@ -1,6 +1,8 @@
 from pyrogram import Client
+
+from pagermaid.dependence import client
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import Message, client
 
 
 @listener(command="news", description="每日新闻、历史上的今天、天天成语、慧语香风、诗歌天地")

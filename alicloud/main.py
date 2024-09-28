@@ -4,13 +4,14 @@ from datetime import datetime
 
 from pyrogram.errors import FloodWait
 
-from pagermaid import scheduler
+from pagermaid.dependence import scheduler
 from pagermaid.hook import Hook
 from pagermaid.listener import listener
 from pagermaid.services import client as request, sqlite, bot
 from pagermaid.enums import Message
-from pagermaid.sub_utils import Sub
-from pagermaid.utils import check_manage_subs, edit_delete
+from pagermaid.utils import Sub
+from pagermaid.utils.bot_utils import edit_delete
+from pagermaid.utils.listener import check_manage_subs
 
 
 class AliCloud:

@@ -8,9 +8,9 @@ from pyrogram.errors import (
 )
 from pyrogram.types import Chat
 
-from pagermaid import bot
 from pagermaid.listener import listener
 from pagermaid.enums import Client, Message
+from pagermaid.services import bot
 from pagermaid.utils import lang
 
 

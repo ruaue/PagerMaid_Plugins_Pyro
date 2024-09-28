@@ -2,8 +2,7 @@ from pyrogram.raw.functions.messages import ReadMentions
 
 from pagermaid.enums import Client, Message
 from pagermaid.listener import listener
-from pagermaid.sub_utils import Sub
-from pagermaid.utils import lang
+from pagermaid.utils import lang, Sub
 
 from pyromod import require_mod_version
 

@@ -1,6 +1,6 @@
 from pagermaid.listener import listener
 from pagermaid.enums import Message, AsyncClient
-from pagermaid.single_utils import safe_remove
+from pagermaid.utils import safe_remove
 
 
 @listener(command="weather_lite", description="查询天气", parameters="[城市]")

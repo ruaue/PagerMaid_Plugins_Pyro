@@ -6,11 +6,10 @@ from pyrogram.errors import PhotoCropSizeSmall, ImageProcessFailed, BadRequest
 from pyrogram.raw.functions.photos import UploadContactProfilePhoto
 from pyrogram.raw.types import InputUser
 
-from pagermaid import Config
+from pagermaid.config import Config
 from pagermaid.enums import Client, Message
 from pagermaid.listener import listener
-from pagermaid.single_utils import safe_remove
-from pagermaid.utils import lang
+from pagermaid.utils import lang, safe_remove
 
 
 async def get_photo(message: Message) -> Optional[str]:

@@ -10,13 +10,14 @@ from pyrogram.raw.types import InputStickerSetShortName
 from pyrogram.raw.types.messages import StickerSet
 from pyrogram.types import Document
 
+from pagermaid.dependence import add_delete_message_job
 from pagermaid.hook import Hook
 from pagermaid.listener import listener
 from pagermaid.enums import Message
-from pagermaid.scheduler import add_delete_message_job
 from pagermaid.services import bot, scheduler
-from pagermaid.utils import edit_delete, check_manage_subs
-from pagermaid.sub_utils import Sub
+from pagermaid.utils import Sub
+from pagermaid.utils.bot_utils import edit_delete
+from pagermaid.utils.listener import check_manage_subs
 
 lu_xiao_xun_bs_sub = Sub("luxiaoxunbs")
 lu_xiao_xun_sticker: Optional[StickerSet] = None

@@ -5,9 +5,8 @@
 @Date    ：2022/6/23 21:57
 """
 
-from pyrogram import Client
+from pagermaid.enums import Client, Message
 from pagermaid.listener import listener
-from pagermaid.utils import Message, client
 from pyrogram.enums import ChatMemberStatus, ParseMode
 
 

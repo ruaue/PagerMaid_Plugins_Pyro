@@ -1,11 +1,12 @@
 import contextlib
 
+from pagermaid.dependence import sqlite
 from pagermaid.enums import Client, Message
 from pagermaid.hook import Hook
-from pagermaid.single_utils import sqlite
+
 
 @Hook.command_postprocessor()
-async def auto_delete(client: Client, message: Message, command: str, sub_command: str):
+async def auto_delete(client: Client, message: Message, command: str, _: str):
     if command in [
         "lang",
         "alias",
@@ -38,8 +39,10 @@ async def auto_delete(client: Client, message: Message, command: str, sub_comman
     ]:
         async for msg in client.get_chat_history(message.chat.id, limit=100):
             if msg.from_user and msg.from_user.is_self:
+                msg: "Message"
                 await msg.delay_delete(120)
                 break
+
 
 @Hook.on_startup()
 async def auto_delete_on_startup(client: Client):

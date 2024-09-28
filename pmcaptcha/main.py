@@ -36,12 +36,12 @@ from pyrogram.raw.functions.channels import UpdateUsername
 from pyrogram.raw.types import GlobalPrivacySettings
 from pyrogram.types import User, Sticker
 
-from pagermaid import bot, logs
 from pagermaid.config import Config
+from pagermaid.dependence import sqlite
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.single_utils import sqlite
-from pagermaid.sub_utils import Sub
-from pagermaid.utils import Message, alias_command
+from pagermaid.services import bot
+from pagermaid.utils import alias_command, Sub
 
 cmd_name = "pmcaptcha"
 
@@ -67,7 +67,7 @@ async def log(message: str, remove_prefix: bool = False):
 
 
 def get_version():
-    from pagermaid import working_dir
+    from pagermaid.static import working_dir
     from os import sep
     from json import load
 

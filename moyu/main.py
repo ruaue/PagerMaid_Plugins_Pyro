@@ -4,13 +4,16 @@ from os import sep
 
 from pyrogram import Client
 from pyrogram.enums.parse_mode import ParseMode
-from pagermaid import scheduler
-from pagermaid import bot
+
+from pagermaid.dependence import client, scheduler
+from pagermaid.enums import Message
 from pagermaid.group_manager import enforce_permission
 from pagermaid.listener import listener
 from pagermaid.modules.help import from_msg_get_sudo_uid
-from pagermaid.utils import client, Message, from_self, edit_delete
-from pagermaid.sub_utils import Sub
+from pagermaid.services import bot
+from pagermaid.utils import Sub
+from pagermaid.utils.bot_utils import edit_delete
+from pagermaid.utils.listener import from_self
 
 moyu_sub = Sub("moyu")
 

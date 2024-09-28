@@ -1,12 +1,12 @@
 import contextlib
 import secrets
 
-from pagermaid import bot, log
-from pagermaid.utils import alias_command
+from pagermaid.dependence import add_delete_message_job
+from pagermaid.enums import Message
+from pagermaid.services import bot
+from pagermaid.utils import alias_command, Sub
 from pagermaid.listener import listener
-from pagermaid.single_utils import Message
-from pagermaid.sub_utils import Sub
-from pagermaid.scheduler import add_delete_message_job
+from pagermaid.utils.bot_utils import log
 
 lottery_bot = Sub("lottery_bot")
 lottery_json = {

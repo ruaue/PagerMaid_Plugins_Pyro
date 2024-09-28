@@ -1,8 +1,8 @@
 from asyncio import sleep
+
+from pagermaid.dependence import sqlite, client
 from pagermaid.listener import listener
 from pagermaid.enums import Message
-from pagermaid.single_utils import sqlite
-from pagermaid.utils import client, edit_delete
 
 # from pagermaid import bot
 from pyrogram.enums.chat_type import ChatType
@@ -12,6 +12,8 @@ from pagermaid.services import bot
 from pyrogram.types import ChatPermissions
 
 import json
+
+from pagermaid.utils.bot_utils import edit_delete
 
 
 class SillyGirl:

@@ -7,14 +7,16 @@ from typing import Optional, Dict
 
 from pyrogram import Client
 from pyrogram.enums.parse_mode import ParseMode
-from pagermaid import scheduler
-from pagermaid import bot
+
+from pagermaid.dependence import client, scheduler
+from pagermaid.enums import Message
 from pagermaid.group_manager import enforce_permission
 from pagermaid.listener import listener
 from pagermaid.modules.help import from_msg_get_sudo_uid
-from pagermaid.utils import client, Message, from_self, edit_delete
-from pagermaid.single_utils import safe_remove
-from pagermaid.sub_utils import Sub
+from pagermaid.services import bot
+from pagermaid.utils import Sub, safe_remove
+from pagermaid.utils.bot_utils import edit_delete
+from pagermaid.utils.listener import from_self
 
 everyday_en_sub = Sub("everyday_en")
 everyday_en_data_cache: Optional[Dict] = None

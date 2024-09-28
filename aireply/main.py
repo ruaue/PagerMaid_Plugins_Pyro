@@ -7,7 +7,8 @@ from pyrogram import Client
 from pagermaid.enums import Message
 from pagermaid.services import sqlite, bot
 from pagermaid.listener import listener
-from pagermaid.utils import edit_delete, pip_install, lang
+from pagermaid.utils import pip_install, lang
+from pagermaid.utils.bot_utils import edit_delete
 
 pip_install("snownlp")
 

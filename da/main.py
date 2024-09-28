@@ -1,10 +1,10 @@
 import contextlib
 
-from pagermaid import log
+from pagermaid.dependence import add_delete_message_job
 from pagermaid.enums import Client, Message
 from pagermaid.listener import listener
-from pagermaid.scheduler import add_delete_message_job
 from pagermaid.utils import alias_command
+from pagermaid.utils.bot_utils import log
 
 
 @listener(

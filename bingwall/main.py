@@ -2,9 +2,10 @@ import secrets
 
 from os import sep
 
+from pagermaid.dependence import client
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.single_utils import Message, safe_remove
-from pagermaid.utils import client
+from pagermaid.utils import safe_remove
 
 
 async def get_wallpaper_url(num):

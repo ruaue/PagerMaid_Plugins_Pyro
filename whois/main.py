@@ -1,6 +1,8 @@
 from pyrogram import Client
+
+from pagermaid.dependence import client
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import Message, client
 
 
 @listener(command="whois", description="查看域名是否已被注册、注册日期、过期日期、域名状态、DNS解析服务器等。")

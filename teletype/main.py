@@ -2,8 +2,9 @@ from asyncio import sleep
 
 from pyrogram.errors.exceptions.bad_request_400 import MessageNotModified
 
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import lang, Message
+from pagermaid.utils import lang
 
 
 @listener(

@@ -3,9 +3,9 @@
 from pyrogram.errors import YouBlockedUser
 from pyrogram import filters
 
-from pagermaid import bot
 from pagermaid.listener import listener
 from pagermaid.enums import Message
+from pagermaid.services import bot
 from pagermaid.utils import alias_command
 
 

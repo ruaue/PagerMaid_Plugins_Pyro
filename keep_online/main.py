@@ -2,8 +2,8 @@ import contextlib
 
 from pyrogram.raw.functions.account import UpdateStatus
 
-from pagermaid import log
 from pagermaid.services import bot, scheduler
+from pagermaid.utils.bot_utils import log
 
 
 @scheduler.scheduled_job("interval", seconds=55, id="keep_online")

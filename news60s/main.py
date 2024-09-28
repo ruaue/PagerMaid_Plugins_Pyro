@@ -5,13 +5,15 @@ from os import sep
 from os.path import isfile
 from typing import Optional
 
-from pagermaid import scheduler
+from pagermaid.dependence import scheduler
 from pagermaid.enums import Message
 from pagermaid.listener import listener
 from pagermaid.services import bot, client
-from pagermaid.sub_utils import Sub
-from pagermaid.utils import check_manage_subs, edit_delete
 from pyrogram.enums.parse_mode import ParseMode
+
+from pagermaid.utils import Sub
+from pagermaid.utils.bot_utils import edit_delete
+from pagermaid.utils.listener import check_manage_subs
 
 CACHE_PATH = f"data{sep}news60s.png"
 

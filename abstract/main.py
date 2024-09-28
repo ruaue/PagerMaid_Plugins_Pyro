@@ -1,8 +1,10 @@
 """ PagerMaid module that 抽象中文 """
 
 from pyrogram import Client
+
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import lang, Message, pip_install
+from pagermaid.utils import lang, pip_install
 
 pip_install("jieba")
 pip_install("pinyin")

@@ -1,9 +1,12 @@
 import secrets
 
-from pagermaid import bot, scheduler
+from pagermaid.dependence import scheduler
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import Message, edit_delete, check_manage_subs
-from pagermaid.sub_utils import Sub
+from pagermaid.services import bot
+from pagermaid.utils import Sub
+from pagermaid.utils.bot_utils import edit_delete
+from pagermaid.utils.listener import check_manage_subs
 
 everyday_greet_sub = Sub("everyday_greet")
 everyday_greet_data = {

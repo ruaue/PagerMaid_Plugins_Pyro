@@ -137,3 +137,5 @@ dmypy.json
 
 # Pyright config
 pyrightconfig.json
+
+pagermaid/

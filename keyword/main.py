@@ -9,10 +9,10 @@ from pyrogram.enums import ParseMode
 from pyrogram.types import ChatPermissions, Chat
 from pyrogram.types.user_and_chats.user import Link
 
-from pagermaid import bot
+from pagermaid.dependence import sqlite, add_delete_message_job
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.single_utils import sqlite, Message
-from pagermaid.scheduler import add_delete_message_job
+from pagermaid.services import bot
 
 
 class KeywordTask:

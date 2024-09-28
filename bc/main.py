@@ -11,8 +11,10 @@ from datetime import datetime
 from sys import executable
 import urllib.request
 from pyrogram import Client
+
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import Message, pip_install
+from pagermaid.utils import pip_install
 
 pip_install("binance-connector", alias="binance")
 pip_install("xmltodict")

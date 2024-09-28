@@ -11,12 +11,12 @@ from pyrogram.errors import (
 )
 from pyrogram.types import Chat
 
-from pagermaid import log
+from pagermaid.dependence import add_delete_message_job
 from pagermaid.listener import listener
-from pagermaid.scheduler import add_delete_message_job
 from pagermaid.services import bot
 from pagermaid.enums import Message
 from pagermaid.utils import lang
+from pagermaid.utils.bot_utils import log
 
 
 def mention_group(chat: Chat):

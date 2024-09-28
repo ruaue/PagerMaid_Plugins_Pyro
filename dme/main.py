@@ -2,10 +2,10 @@
 
 import contextlib
 
-from pagermaid import read_context
 from pagermaid.enums import Client, Message
 from pagermaid.listener import listener, _lock
 from pagermaid.modules.prune import self_prune
+from pagermaid.static import read_context
 from pagermaid.utils import lang
 
 

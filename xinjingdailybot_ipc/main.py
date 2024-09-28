@@ -13,11 +13,11 @@ from urllib import parse
 
 from pyrogram.enums import ChatType
 
-from pagermaid import bot, scheduler
+from pagermaid.dependence import sqlite, client, scheduler
 from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.single_utils import Message, safe_remove, sqlite
-from pagermaid.utils import alias_command, client
+from pagermaid.services import bot
+from pagermaid.utils import alias_command, safe_remove
 
 cmd_name = "xinjingdailybot"
 alias_cmd_name = alias_command(cmd_name)

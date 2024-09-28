@@ -17,9 +17,10 @@ from pyrogram.raw.types import (
     InputDocument,
 )
 
-from pagermaid import bot
+from pagermaid.dependence import sqlite
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.single_utils import sqlite, Message
+from pagermaid.services import bot
 from pagermaid.utils import alias_command
 from pyromod.utils.conversation import Conversation
 

@@ -4,11 +4,12 @@
 
 from secrets import choice
 
-from pagermaid import log, Config
+from pagermaid.config import Config
 from pagermaid.listener import listener
 from pagermaid.enums import Message
 from pagermaid.services import client as request, scheduler
 from pagermaid.hook import Hook
+from pagermaid.utils.bot_utils import log
 
 
 class FaDian:

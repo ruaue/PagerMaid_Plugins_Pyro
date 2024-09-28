@@ -1,6 +1,9 @@
 from pyrogram import Client
+
+from pagermaid.dependence import client
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import Message, client, edit_delete
+from pagermaid.utils.bot_utils import edit_delete
 
 
 @listener(command="diss", description="儒雅随和版祖安语录。")

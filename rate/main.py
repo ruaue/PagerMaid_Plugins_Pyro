@@ -2,13 +2,13 @@
 
 from json.decoder import JSONDecodeError
 
-from pagermaid import log
 from pagermaid.utils import alias_command
 from pagermaid.enums import Message
 from pagermaid.services import client, scheduler
 from pagermaid.hook import Hook
 from pagermaid.listener import listener
 from pagermaid.config import Config
+from pagermaid.utils.bot_utils import log
 
 
 class Rate:

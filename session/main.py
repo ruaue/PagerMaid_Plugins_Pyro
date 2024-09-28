@@ -8,10 +8,10 @@ from pyrogram.enums import ChatType
 from pyrogram.raw.functions.account import GetAuthorizations, ResetAuthorization
 from pyrogram.raw.types import Authorization
 
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.single_utils import Message
+from pagermaid.services import bot
 from pagermaid.utils import alias_command
-from pagermaid import bot
 
 
 async def get_all_session() -> List[Authorization]:

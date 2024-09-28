@@ -8,12 +8,11 @@ from dataclasses import dataclass
 from typing import Any, Awaitable, Callable, Dict, List, NamedTuple, Optional, Tuple
 
 import yaml
-from pagermaid import logs
 from pagermaid.common.reload import reload_all
 from pagermaid.enums import Client, Message
 from pagermaid.listener import listener
 from pagermaid.services import scheduler
-from pagermaid.utils import alias_command, pip_install
+from pagermaid.utils import alias_command, pip_install, logs
 
 
 def install_dependencies() -> None:

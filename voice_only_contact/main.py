@@ -2,8 +2,8 @@ import contextlib
 
 from pyrogram import filters
 
+from pagermaid.enums import Message
 from pagermaid.listener import raw_listener
-from pagermaid.single_utils import Message
 
 
 @raw_listener(filters.private & filters.voice & filters.incoming)

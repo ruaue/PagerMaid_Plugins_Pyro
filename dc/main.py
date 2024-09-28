@@ -6,8 +6,9 @@
 """
 
 from pyrogram import Client
+
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import Message
 from pyrogram.enums import ParseMode
 
 

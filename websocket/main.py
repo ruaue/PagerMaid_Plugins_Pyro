@@ -3,13 +3,13 @@ import json
 
 from asyncio import sleep
 
-from pagermaid import log
+from pagermaid.dependence import sqlite
 from pagermaid.hook import Hook
 from pagermaid.listener import listener
 from pagermaid.enums import Message
 from pagermaid.services import bot
-from pagermaid.single_utils import sqlite
 from pagermaid.utils import pip_install
+from pagermaid.utils.bot_utils import log
 
 pip_install("aiohttp")
 

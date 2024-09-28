@@ -9,10 +9,9 @@ from pyrogram.raw.functions.messages import ReadReactions
 from pyrogram.raw.types import UpdateMessageReactions, PeerChannel, PeerChat, PeerUser
 
 from pagermaid.services import bot
-from pagermaid.sub_utils import Sub
 from pagermaid.enums import Client, Message
 from pagermaid.listener import listener
-from pagermaid.utils import lang
+from pagermaid.utils import lang, Sub
 
 no_reactions_sub = Sub("no_reactions")
 

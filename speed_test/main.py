@@ -5,9 +5,8 @@ from os.path import exists
 from httpx import ReadTimeout
 
 from pagermaid.listener import listener
-from pagermaid.single_utils import safe_remove
 from pagermaid.enums import Client, Message, AsyncClient
-from pagermaid.utils import lang, pip_install
+from pagermaid.utils import lang, pip_install, safe_remove
 
 pip_install("speedtest-cli", alias="speedtest")
 

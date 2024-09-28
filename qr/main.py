@@ -1,11 +1,12 @@
 """ QR Code related utilities. """
 
 from PIL import Image
-from pagermaid import log, Config
+
+from pagermaid.config import Config
 from pagermaid.enums import Client, Message
 from pagermaid.listener import listener
-from pagermaid.single_utils import safe_remove
-from pagermaid.utils import lang, pip_install
+from pagermaid.utils import lang, pip_install, safe_remove
+from pagermaid.utils.bot_utils import log
 
 pip_install("pyqrcode")
 pip_install("pypng")

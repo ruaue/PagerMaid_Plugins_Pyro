@@ -1,6 +1,6 @@
 from pagermaid.listener import listener
-from pagermaid.single_utils import safe_remove
 from pagermaid.enums import Client, Message
+from pagermaid.utils import safe_remove
 
 
 async def get_audio(message: Message):

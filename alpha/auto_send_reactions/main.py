@@ -2,12 +2,12 @@
 自动回复Emoji插件
 Author: SuperManito
 """
-
-from pagermaid import bot, log
-from pagermaid.single_utils import sqlite
+from pagermaid.dependence import sqlite
 from pagermaid.enums import Client, Message
-from pagermaid.utils import lang, edit_delete, pip_install
+from pagermaid.services import bot
+from pagermaid.utils import lang, pip_install
 from pagermaid.listener import listener
+from pagermaid.utils.bot_utils import edit_delete, log
 
 pip_install("emoji")
 

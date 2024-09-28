@@ -2,7 +2,7 @@ from PIL import Image
 
 from pagermaid.listener import listener
 from pagermaid.enums import Message, Client
-from pagermaid.single_utils import safe_remove
+from pagermaid.utils import safe_remove
 
 
 @listener(

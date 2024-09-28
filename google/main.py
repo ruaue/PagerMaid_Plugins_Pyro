@@ -1,7 +1,8 @@
-from pagermaid import Config, log
+from pagermaid.config import Config
 from pagermaid.listener import listener
 from pagermaid.enums import Message
 from pagermaid.utils import lang, pip_install
+from pagermaid.utils.bot_utils import log
 
 pip_install("magic-google", alias="magic_google")
 

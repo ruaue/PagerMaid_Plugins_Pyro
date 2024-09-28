@@ -1,6 +1,8 @@
 from pyrogram import Client
+
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import Message, execute
+from pagermaid.utils import execute
 
 
 @listener(

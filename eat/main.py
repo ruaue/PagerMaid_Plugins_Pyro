@@ -10,9 +10,10 @@ from pyrogram.enums import MessageEntityType
 from pyrogram.errors import UsernameNotOccupied, UsernameInvalid
 from pyrogram.types import User, Chat
 
-from pagermaid.single_utils import sqlite, safe_remove
+from pagermaid.dependence import sqlite, client
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import client, Message, lang
+from pagermaid.utils import lang, safe_remove
 
 from collections import defaultdict
 import json

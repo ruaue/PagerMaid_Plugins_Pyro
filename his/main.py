@@ -1,11 +1,11 @@
 """
 Pagermaid_Pyro group message history query plugin. Plugin by @tom-snow (@caiji_shiwo)
 """
-from pagermaid import log
 from pagermaid.enums import Client, Message
 from pagermaid.listener import listener
 from pagermaid.utils import alias_command
 from pagermaid.config import Config
+from pagermaid.utils.bot_utils import log
 
 
 class HisMsg:

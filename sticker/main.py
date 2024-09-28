@@ -17,8 +17,7 @@ from pyrogram.file_id import FileId
 from pagermaid.listener import listener
 from pagermaid.services import bot, sqlite
 from pagermaid.enums import Message
-from pagermaid.single_utils import safe_remove
-from pagermaid.utils import alias_command
+from pagermaid.utils import alias_command, safe_remove
 
 
 class CannotToStickerSetError(Exception):

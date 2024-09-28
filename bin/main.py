@@ -1,8 +1,10 @@
 import json
 from json.decoder import JSONDecodeError
 from pyrogram import Client
+
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import Message, pip_install
+from pagermaid.utils import pip_install
 
 pip_install("requests")
 

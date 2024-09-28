@@ -1,7 +1,9 @@
 import datetime
 from pyrogram import Client
+
+from pagermaid.dependence import client
+from pagermaid.enums import Message
 from pagermaid.listener import listener
-from pagermaid.utils import Message, client
 
 icons = {
     "01d": "🌞",

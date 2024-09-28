@@ -1,14 +1,15 @@
 """ Module to automate message deletion. """
 
 import traceback
-from asyncio import sleep
 from datetime import datetime, timedelta, timezone
-from pagermaid.utils import pip_install
+
+from pagermaid.dependence import scheduler
+from pagermaid.services import bot
+from pagermaid.utils import pip_install, logs
 
 pip_install("emoji")
 
 from emoji import emojize
-from pagermaid import logs, scheduler, bot
 
 
 auto_change_name_init = False

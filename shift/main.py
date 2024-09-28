@@ -11,12 +11,13 @@ from pyrogram.enums import ChatType
 from pyrogram.errors import FloodWait
 from pyrogram.types import Chat
 
-from pagermaid import log, Config
+from pagermaid.config import Config
 from pagermaid.enums import Client, Message
 from pagermaid.enums.command import CommandHandler
 from pagermaid.listener import listener
-from pagermaid.services import bot, scheduler, sqlite, logs
-from pagermaid.utils import lang
+from pagermaid.services import bot, scheduler, sqlite
+from pagermaid.utils import lang, logs
+from pagermaid.utils.bot_utils import log
 
 WHITELIST = [-1001441461877]
 AVAILABLE_OPTIONS_TYPE = Literal["silent", "text", "all", "photo", "document", "video"]

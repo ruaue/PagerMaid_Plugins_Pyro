@@ -1,6 +1,5 @@
-from pagermaid.enums import AsyncClient
+from pagermaid.enums import AsyncClient, Message
 from pagermaid.listener import listener
-from pagermaid.utils import Message
 
 
 @listener(command="tel", description="手机号码归属地等信息查询。")

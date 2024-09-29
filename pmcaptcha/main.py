@@ -41,7 +41,7 @@ from pagermaid.dependence import sqlite
 from pagermaid.enums import Message
 from pagermaid.listener import listener
 from pagermaid.services import bot
-from pagermaid.utils import alias_command, Sub
+from pagermaid.utils import alias_command, Sub, logs
 
 cmd_name = "pmcaptcha"
 

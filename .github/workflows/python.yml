@@ -3,7 +3,7 @@ name: Update list
 on:
   push:
     branches:
-      - main
+      - '*'
     paths-ignore:
       - '**.md'
       - '.github/**'

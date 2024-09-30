@@ -1099,6 +1099,16 @@
             "supported": true,
             "des_short": "carbon 代码截图",
             "des": ""
+        },
+        {
+            "name": "stc",
+            "version": "1.0",
+            "section": "chat",
+            "maintainer": "debiansid",
+            "size": "5.69 kb",
+            "supported": true,
+            "des_short": "Rename stc.py to main.py",
+            "des": ""
         }
     ]
 }

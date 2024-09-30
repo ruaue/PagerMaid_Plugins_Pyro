@@ -20,7 +20,7 @@ jobs:
     steps:
     # 此步骤使用 GitHub 的 https://github.com/actions/checkout
     - name: checkout actions
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # 设置python环境
     # 此步骤使用 GitHub 的 https://github.com/actions/setup-python
@@ -46,7 +46,7 @@ jobs:
         python update_list.py
 
     # Auto commit
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - uses: stefanzweifel/git-auto-commit-action@v5
       with:
         # Optional. Commit message for the created commit.
         # Defaults to "Apply automatic changes"

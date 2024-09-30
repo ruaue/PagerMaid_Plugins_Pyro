@@ -6,7 +6,7 @@ from httpx import get
 from update_des import update_des
 
 main = get(
-    "https://api.github.com/repos/TeamPGM/PagerMaid_Plugins_Pyro/commits/v2"
+    "https://api.github.com/repos/ruaue/PagerMaid_Plugins_Pyro/commits/v1.4.10"
 ).json()
 plugins = []
 alpha_plugins = []
